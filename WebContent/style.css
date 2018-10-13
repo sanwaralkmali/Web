@@ -121,3 +121,13 @@ p  , .row > h3 {
 }
     
 }
+
+@media screen and (max-width: 500px){
+    
+     .Firstrow{
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+    
+}
+}
