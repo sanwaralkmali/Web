@@ -1,2 +1,60 @@
 1 start with the form page and the users database
 
+
+CREATE TABLE IF NOT EXISTS Customers (
+    customer_id  VARCHAR(16) NOT NULL UNIQUE,
+    firstName VARCHAR(16) NOT NULL ,
+    lastName VARCHAR(16) NOT NULL ,
+    email VARCHAR(32) NOT NULL ,
+    phoneNumber VARCHAR(16) NOT NULL UNIQUE,
+    address VARCHAR(32) NOT NULL ,
+    password VARCHAR(32) NOT NULL,
+    PRIMARY KEY (customer_id)
+);
+
+
+CREATE TABLE IF NOT EXISTS Admins (
+    Admin_id  VARCHAR(16) NOT NULL UNIQUE,
+    firstName VARCHAR(16) NOT NULL ,
+    lastName VARCHAR(16) NOT NULL ,
+    email VARCHAR(32) NOT NULL UNIQUE,
+    password VARCHAR(32) NOT NULL,
+    PRIMARY KEY (Admin_id)
+);
+
+CREATE TABLE IF NOT EXISTS Menus (
+    menu_id  VARCHAR(16) NOT NULL UNIQUE,
+    menu_name VARCHAR(16) NOT NULL ,
+    details VARCHAR(32) NOT NULL,
+    PRIMARY KEY (menu_id)
+);
+
+CREATE TABLE IF NOT EXISTS Items (
+    item_id int NOT NULL,
+    menu_id  VARCHAR(16) NOT NULL UNIQUE,
+    item_name VARCHAR(16) NOT NULL ,
+    details VARCHAR(32) NOT NULL,
+    price int NOT NULL ,
+    PRIMARY KEY (item_id) ,
+   FOREIGN KEY (menu_id)  REFERENCES Menus(menu_id)
+);
+
+CREATE TABLE IF NOT EXISTS Orders (
+    order_id  VARCHAR(16) NOT NULL UNIQUE,
+    item_id int NOT NULL ,
+    customer_id  VARCHAR(16) NOT NULL UNIQUE,
+    table_id VARCHAR(16),
+    quantity TINYINT NOT NULL,
+    details VARCHAR(32) NOT NULL,
+    PRIMARY KEY (order_id) ,
+    FOREIGN KEY (item_id)  REFERENCES Items(item_id),
+    FOREIGN KEY (table_id)  REFERENCES Tables(table_id) ,
+    FOREIGN KEY (customer_id)  REFERENCES Customers(customer_id)
+);
+
+
+CREATE TABLE IF NOT EXISTS Tables (
+    table_id  VARCHAR(16) NOT NULL UNIQUE,
+    table_status ENUM('0', '1'),
+    PRIMARY KEY (table_id)
+);
