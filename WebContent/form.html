@@ -122,16 +122,16 @@ href='https://fonts.googleapis.com/icon?family=Material+Icons'>
       </div>
      
      <div class="RegisterROW">      
-         <form>
+         <form action="SignUp" method="post">
         
            <div class="RegisterROW"> 
          	  <div class="RegisterColumn"> 
-            	 <input type="text" name="userFirstName" placeholder="First name">
+            	 <input type="text" name="userFirstName" placeholder="First name" required>
              
               </div>
              
               <div class="RegisterColumn"> 
-             	  <input type="text" name="userLastName" placeholder=" Last name">
+             	  <input type="text" name="userLastName" placeholder=" Last name" required>
              
               </div>
                  
@@ -141,18 +141,18 @@ href='https://fonts.googleapis.com/icon?family=Material+Icons'>
 			<div class="RegisterROW"> 
 			
               <div class="RegisterColumn"> 
-                    <input type="text" name="email" placeholder=" Email">
+                    <input type="text" name="email" placeholder=" Email" required>
               </div>
               
       		  <div class="RegisterColumn"> 
-                    <input type="text" name="phone" placeholder=" phone number">
+                    <input type="text" name="phone" placeholder=" phone number" required>
               </div>
   			 </div>
   			 
              <div class="RegisterROW">
              	  <div class="RegisterColumn"> 
                       <input type="password" name="userpassword" 
-                      		 placeholder=" password">
+                      		 placeholder=" password" required>
            		  </div>
            		  
                    <div class="RegisterColumn"> 
@@ -163,17 +163,34 @@ href='https://fonts.googleapis.com/icon?family=Material+Icons'>
 			  
            <div class="RegisterROW"> 
                   <input class="addText" type="text" 
-                  		 name="address" placeholder="Address">
+                  		 name="address" placeholder="Address" required>
            </div>
                  
-           <div class="RegisterROW">
-              		<input type="button" name="CreateAccount"
-              			   value="Create Account"> 
-           </div>
+              		<div class="col-6">
+	                    <button type="submit" name="loginBu"> Create Account </button>
+	                </div>
+           
          </form>
        </div>
 	</div>
   </div>
     <script type="application/javascript" src="main.js"></script>
 </body>
+
+<%
+	String s =(String) session.getAttribute("NewAccount");
+
+if(s == "try again"){
+%>
+
+<script type="text/javascript">
+alert("<%=s%>");
+<%    session.removeAttribute("NewAccount");
+%>
+
+</script>
+
+<%	
+}
+ %>
 </html>

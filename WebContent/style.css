@@ -1,5 +1,15 @@
-
-
+body{
+  
+ margin: 0;
+ width: 100%;
+ height:628px;  
+background: #d9d9d9; /* Old browsers */
+background: -moz-linear-gradient(top, #f2f2f2 0%, #d9d9d9 12%, #f2f2f2 25%, #d9d9d9 39%, #f2f2f2 50%, #bfbfbf 51%, #d9d9d9 60%, #d9d9d9 76%, #f2f2f2 91%, #d9d9d9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #d9d9d9 0%,#f2f2f2 12%,#f2f2f2 25%,#d9d9d9 39%,#f2f2f2 50%,#d9d9d9 51%,#bfbfbf 60%,#f2f2f2 76%,#bfbfbf 91%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f2f2f2 0%,#f2f2f2 12%,#f2f2f2 25%,#d9d9d9 39%,#bfbfbf 50%,#f2f2f2 51%,#bfbfbf 60%,#f2f2f2 76%,#d9d9d9 91%,#bfbfbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f2f2f2',GradientType=0 ); 
+}
+/*
 .homeDiv {
  margin: 0;
  width: 100%;
@@ -9,7 +19,7 @@ background: -moz-linear-gradient(top, #f2f2f2 0%, #d9d9d9 12%, #f2f2f2 25%, #d9d
 background: -webkit-linear-gradient(top, #d9d9d9 0%,#f2f2f2 12%,#f2f2f2 25%,#d9d9d9 39%,#f2f2f2 50%,#d9d9d9 51%,#bfbfbf 60%,#f2f2f2 76%,#bfbfbf 91%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #f2f2f2 0%,#f2f2f2 12%,#f2f2f2 25%,#d9d9d9 39%,#bfbfbf 50%,#f2f2f2 51%,#bfbfbf 60%,#f2f2f2 76%,#d9d9d9 91%,#bfbfbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
-}
+}*/
 
 .ResuarantLogo{
     align-content: center;
@@ -188,6 +198,127 @@ span{
     font color: black;
 }
 
+
+/****************Hello Page Home ****************/
+
+.home{
+     width: 100%;
+    height: 100%;
+    
+}
+.ShowItems{
+    background-color: red;
+    position: inherit;
+    margin-top: 20px;
+    width: auto;
+    height: 100%;
+    max-height: 220px;
+    border-radius: 13px;
+    box-shadow: 2px 3px;
+    padding: 20px;
+    padding-left: 50px;
+    margin: 6%;
+    
+}
+
+.ImageAndNameItems{
+    width: 28%;
+    height: 100%;
+    float: left;
+    background-color: blue;
+    padding: 10px;
+}
+
+.ImageItems{
+    width: 100%;
+    height: 72%;
+    background-color: burlywood;
+    border-radius: 25px;
+     padding: 10px;
+
+    
+}
+
+
+.NameItems{
+    width: 100%;
+    height: 28%;
+    background-color: chartreuse;
+    margin-top: 5px;
+    border-radius: 12px;
+    padding: 10px;
+    
+}
+
+
+.ItemDescription{
+    width: 42%;
+    height: 100%;  
+    background-color: darkgray;
+    margin-left: 15px;
+    float: left; 
+    padding: 10px;
+
+
+
+}
+
+.ItemPrice{
+    width: 13%;
+    height: 100%;
+    background-color: darkorange;
+    float: left;
+    padding: 10px;
+    border-radius: 13px;
+    margin-left: 20px;
+     padding: 10px;
+
+}
+
+.ItemsCounter{
+    width: 10%;
+    height: 100%;
+    background-color: darkseagreen;
+    float: left;
+    padding: 20px;
+    border-radius: 13px;
+    margin-left: 20px;
+    
+    
+}
+
+.UpCountetr{
+    width: 100%;
+    margin-left: 5%;
+    height: 30%;
+    background-color: azure;
+    border-radius: 120px;
+}
+
+
+.NumberOfItems{
+    width: 100%;
+    
+        padding: 10px;
+
+    margin: 5px;
+    height: 30%;
+    background-color: deepskyblue;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*********** Responsive Website **********/
 
  @media screen and (max-width: 900px) {
@@ -202,7 +333,28 @@ span{
      .Register{
          width: 65%;
          left: 20%;
+     } 
+     
+      .ImageAndNameItems{
+    width: 20%;
+    padding: 5px;
+}
+
+.ItemDescription    {
+    width: 30%;
+    padding: 5px;
+}
+     .ItemPrice{
+         padding: 0;
      }
+     .ItemsCounter{
+         padding: 0;
+     }
+     .ShowItems{
+     padding: 0;
+     }
+}
+
       @media screen and (max-width: 780px) {
 .LoginPopContainer{
     width: 70%;
@@ -218,6 +370,22 @@ span{
                
          
      }
+          
+ .ImageAndNameItems{
+    width: 20%;
+    padding: 5px;
+}
+
+.ItemDescription    {
+    width: 30%;
+    padding: 5px;
+}
+          
+           ..ItemPrice{
+         padding: 0;
+     }
+          
+          
 
 }
           @media screen and (max-width: 680px) {
@@ -269,3 +437,5 @@ span{
          
      }
      }
+     
+   
