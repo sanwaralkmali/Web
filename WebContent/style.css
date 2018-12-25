@@ -2,7 +2,7 @@ body{
   
  margin: 0;
  width: 100%;
- height:628px;  
+ height:100%;  
 background: #d9d9d9; /* Old browsers */
 background: -moz-linear-gradient(top, #f2f2f2 0%, #d9d9d9 12%, #f2f2f2 25%, #d9d9d9 39%, #f2f2f2 50%, #bfbfbf 51%, #d9d9d9 60%, #d9d9d9 76%, #f2f2f2 91%, #d9d9d9 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #d9d9d9 0%,#f2f2f2 12%,#f2f2f2 25%,#d9d9d9 39%,#f2f2f2 50%,#d9d9d9 51%,#bfbfbf 60%,#f2f2f2 76%,#bfbfbf 91%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
@@ -202,36 +202,36 @@ span{
 /****************Hello Page Home ****************/
 
 .home{
-     width: 100%;
     height: 100%;
-    
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
 }
+
 .ShowItems{
     background-color: red;
-    position: inherit;
     margin-top: 20px;
-    width: auto;
-    height: 100%;
-    max-height: 220px;
+    width: 100%;
+    height: 220px;
     border-radius: 13px;
     box-shadow: 2px 3px;
     padding: 20px;
-    padding-left: 50px;
     margin: 6%;
     
 }
 
 .ImageAndNameItems{
-    width: 28%;
-    height: 100%;
+    width: 25%;
+    height: 95%;
     float: left;
     background-color: blue;
     padding: 10px;
 }
 
 .ImageItems{
-    width: 100%;
-    height: 72%;
+    width: 90%;
+    height: 70%;
     background-color: burlywood;
     border-radius: 25px;
      padding: 10px;
@@ -241,8 +241,8 @@ span{
 
 
 .NameItems{
-    width: 100%;
-    height: 28%;
+    width: 90%;
+    height: 25%;
     background-color: chartreuse;
     margin-top: 5px;
     border-radius: 12px;
@@ -252,8 +252,8 @@ span{
 
 
 .ItemDescription{
-    width: 42%;
-    height: 100%;  
+    width: 40%;
+    height: 90%;  
     background-color: darkgray;
     margin-left: 15px;
     float: left; 
@@ -265,7 +265,7 @@ span{
 
 .ItemPrice{
     width: 13%;
-    height: 100%;
+    height: 90%;
     background-color: darkorange;
     float: left;
     padding: 10px;
@@ -277,7 +277,7 @@ span{
 
 .ItemsCounter{
     width: 10%;
-    height: 100%;
+    height: 90%;
     background-color: darkseagreen;
     float: left;
     padding: 20px;
@@ -297,12 +297,10 @@ span{
 
 
 .NumberOfItems{
-    width: 100%;
-    
-        padding: 10px;
-
+    width: 90%;
+    padding: 10px;
     margin: 5px;
-    height: 30%;
+    height: 28%;
     background-color: deepskyblue;
     
 }
