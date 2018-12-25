@@ -1,108 +1,175 @@
 body{
+   
+  background-color:#E1B9B9;
     margin: 0;
     padding: 0;
-    background: -moz-linear-gradient(top, #f2f2f2 0%, #d9d9d9 12%, #f2f2f2 25%, #d9d9d9 39%, #f2f2f2 50%, #bfbfbf 51%, #d9d9d9 60%, #d9d9d9 76%, #f2f2f2 91%, #d9d9d9 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #d9d9d9 0%,#d9d9d9 12%,#f2f2f2 25%,#d9d9d9 39%,#d9d9d9 50%,#d9d9d9 51%,#d9d9d9 60%,#f2f2f2 76%,#d9d9d9 91%,#d9d9d9 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 12%,#d9d9d9 25%,#f2f2f2 39%,#d9d9d9 50%,#f2f2f2 51%,#f2f2f2 60%,#d9d9d9 76%,#d9d9d9 91%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f2f2f2',GradientType=0 );
-  
-    
 }
 
-.home{
-  
-width: 100%;
-height: 100%;
-margin: 0;
+/**** Nav Bar *******/
 
-
-}
-
-.ShowItems{
-width:90;
-height: 200px;
-margin: 50px;
-background-color: red;
-padding: 20px;
-}
-
-.ImageAndNameItems{
-    width: 28%;
-    height: 90%;
-    background-color: blue;
-    float: left; 
-      margin: 5px;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 1px 1px;
-}
-.ImageItems{
+.NavBar{
     width: 100%;
-    height: 70%;
-    background-color:antiquewhite;
-    float: left; 
-    border-radius: 12px;
-    box-shadow: 1px 1px;
-     margin: 2px;
-
     
 }
-.NameItems{
-     width: 100%;
-    height: 30%;
-    background-color:aquamarine;
-    float: left; 
-    border-radius: 12px;
-    box-shadow: 1px 1px;
-    margin: 2px;
-    align-content: center;
 
-    
-}
-.ItemDescription{
-     width: 35%;
-    height: 98%;
-    background-color:white;
-    float: left; 
-      margin: 5px;
-    border-radius: 12px;
-    box-shadow: 1px 1px;
-
-}
-.ItemPrice{
-    width: 12%;
-    height: 98%;
-    background-color:blueviolet;
-    float: left; 
-      margin: 5px;
-    border-radius: 12px;
-    box-shadow: 1px 1px;
-
-    
-}
-.ItemsCounter{
-     width: 12%;
-    height: 98%;
-    background-color:burlywood;
+.MyNavBar{
+    width: 100%;
+    height: auto;
     float: left;
-    margin: 5px;
-    border-radius: 12px;
-    box-shadow: 1px 1px;
-    padding: auto;
-    align-content: center;
-    justify-content: center;
-    
-    
-}.UpCountetr{
-    width: auto;
-    margin: 15px;
+    background-color: #6C3D3D;
+}
+
+.LOGO{
+    float: left;
+    margin: 10px;
+   
+
+}
+
+.LOGOBUTTON{
+    border-radius: 10px;
+    background: none;
+    border: none;
+    box-shadow: 1px; 
+}
+
+.LOGOIMAGE{
+    width: 50px;
+    height: 50px;
   
 }
-.NumberOfItems{
-     width: auto;
-    margin: 15px;
-    padding: 5px;
+
+.userImage{
+    display: none;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 10px;
+    margin-right: 25px;
+
 }
-span{
-    padding: 30px;
+
+.userImageImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    
 }
+.SignIn{
+    float: right;
+    margin: 10px;
+
+}
+
+.SignInBUTTON{
+    background: none;
+    border: none;
+    padding: 15px;
+    color:forestgreen;
+    border-radius: 12px;
+}
+
+.SignInBUTTON:hover{
+ 
+    background-color: #5F3333;
+    color: white;
+    
+    
+}
+#container{
+background-color:#ffff;
+
+
+
+    margin: 13%;
+margin-top:0px;
+padding:90px;
+font-size:110%;
+border-radius:5px;
+width: 60%;
+ float: left;
+
+    
+}
+
+
+
+.foodBox1{
+background-color:#884444;
+ margin: 5%;
+margin-top:0px;
+margin-left:5px;
+margin-right:5px;
+margin-bottom:10px;
+font-size:105%;
+width:45%;
+     float: left;
+}
+
+.foodBox2{
+background-color:#884444;
+    margin: 5%
+margin-top:0px;
+margin-left:5px;
+margin-right:5px;
+margin-bottom:10px;
+padding:80px;
+font-size:105%;
+width:170px;
+    float: left;
+    
+    
+}
+.foodBox3{
+background-color: #884444;
+    margin: 5%
+margin-top:0px;
+margin-left:5px;
+margin-right:5px;
+
+padding:80px;
+font-size:105%;
+width:170px;
+     float: left;
+    
+}
+
+.foodBox4{
+background-color:#884444;
+    margin: 5%
+margin-top:0px;
+margin-left:5px;
+margin-right:5px;
+
+padding:80px;
+font-size:105%;
+width:170px;
+     float: left;
+}
+
+
+.foodBox1 .foodImg img{
+    width: 90%;
+    float: left;
+    
+}
+
+.foodBox1 .foodImg{
+    width: 30%;
+    float: left;
+    margin: 5%;
+
+}
+
+
+.foodBox1 .foodDescription {
+   float: left;
+    width:60%;
+    word-wrap: break-word;
+}
+.foodPriceAdd{
+    width: 100%;
+    float: left;
+}
+
+
