@@ -22,31 +22,30 @@ CREATE TABLE IF NOT EXISTS Admins (
 );
 
 CREATE TABLE IF NOT EXISTS Menus (
-    menu_id  int NOT NULL AUTO_INCREMENT,
     menu_name VARCHAR(16) NOT NULL ,
     details VARCHAR(32) NOT NULL,
-    PRIMARY KEY (menu_id)
+    PRIMARY KEY (menu_name)
 );
 
 CREATE TABLE IF NOT EXISTS Items (
-    item_id int NOT NULL AUTO_INCREMENT,
-    menu_id  int NOT NULL,
+    menu_name VARCHAR(16) NOT NULL ,
     item_name VARCHAR(16) NOT NULL ,
     details VARCHAR(32) NOT NULL,
+    ImagePath VARCHAR(32) NOT NULL,
     price int NOT NULL ,
-    PRIMARY KEY (item_id) ,
-   FOREIGN KEY (menu_id)  REFERENCES Menus(menu_id)
+    PRIMARY KEY (item_name) ,
+   FOREIGN KEY (menu_name)  REFERENCES Menus(menu_name)
 );
 
 CREATE TABLE IF NOT EXISTS Orders (
     order_id int NOT NULL AUTO_INCREMENT,
-    item_id int NOT NULL ,
+    item_name VARCHAR(16) NOT NULL ,
     customer_phoneNumber  VARCHAR(16) NOT NULL,
     table_id int,
     quantity TINYINT NOT NULL,
     details VARCHAR(32) NOT NULL,
     PRIMARY KEY (order_id) ,
-    FOREIGN KEY (item_id)  REFERENCES Items(item_id),
+    FOREIGN KEY (item_name)  REFERENCES Items(item_name),
     FOREIGN KEY (table_id)  REFERENCES Tables(table_id) ,
     FOREIGN KEY (customer_phoneNumber)  REFERENCES Customers(phoneNumber)
 );
